@@ -12,14 +12,14 @@ btns.forEach((btn) => {
     } else {
       // ------ Варіант лічильника (- & +) ------
 
-      counterValue = currentValue - 1 > 0 ? currentValue - 1 : currentValue - 1;
+      // counterValue = currentValue - 1 > 0 ? currentValue - 1 : currentValue - 1;
 
       // ------ Варіант лічильника (0 & +) ------
 
-      // counterValue =
-      //   currentValue - 1 >= 0
-      //     ? currentValue - 1
-      //     : 0 & alert("The counter cannot take a negative value!");
+      counterValue =
+        currentValue - 1 >= 0
+          ? currentValue - 1
+          : 0 & alert("The counter cannot take a negative value!");
     }
     span.innerHTML = counterValue;
   });
