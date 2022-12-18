@@ -11,9 +11,9 @@ input.onblur = function (event) {
 
     // ----- Повідомлення про помилку (опція) -----
 
-    //     alert(
-    //       `ERROR: You have entered ${this.value.length} symbols, but you need to enter 6!`
-    //     );
+    alert(
+      `ERROR: You have entered ${this.value.length} symbols, but you need to enter 6!`
+    );
   }
 };
 
