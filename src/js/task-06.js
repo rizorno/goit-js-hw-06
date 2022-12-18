@@ -9,11 +9,11 @@ input.onblur = function (event) {
   ) {
     this.classList.add("invalid");
 
-    // Повідомлення про помилку (опція)
+    // ----- Повідомлення про помилку (опція) -----
 
-    //  alert(
-    //    `You have entered ${this.value.length} symbols, but you need to enter 6!`
-    //  );
+    //     alert(
+    //       `ERROR: You have entered ${this.value.length} symbols, but you need to enter 6!`
+    //     );
   }
 };
 
