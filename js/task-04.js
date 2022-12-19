@@ -5,22 +5,30 @@ btns.forEach((btn) => {
     const event = this.dataset.action;
     const span = this.parentElement.querySelector("#value");
     const currentValue = +span.innerHTML;
+
     let counterValue = 0;
 
     if (event === "increment") {
       counterValue = currentValue + 1;
-    } else {
-      // ------ Варіант лічильника (- & +) ------
-
-      counterValue = currentValue - 1 > 0 ? currentValue - 1 : currentValue - 1;
-
-      // ------ Варіант лічильника (0 & +) ------
-
-      // counterValue =
-      //   currentValue - 1 >= 0
-      //     ? currentValue - 1
-      //     : 0 & alert("The counter cannot take a negative value!");
     }
+
+    if (event === "decrement") {
+      if (currentValue - 1 >= 0) {
+        counterValue = currentValue - 1;
+      } else if (currentValue - 1 === -1) {
+        let message = confirm(
+          "The counter will take a negative value! Do you want to continue?"
+        );
+        if (message === true) {
+          counterValue = currentValue - 1;
+        } else if (message === false) {
+          counterValue = 0;
+        }
+      } else if (currentValue - 1 < 0) {
+        counterValue = currentValue - 1;
+      }
+    }
+
     span.innerHTML = counterValue;
   });
 });
