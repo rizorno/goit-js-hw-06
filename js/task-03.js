@@ -20,7 +20,7 @@ for (const element of images) {
 
   listGallery.insertAdjacentHTML(
     "beforeend",
-    `<li><img src="${url}", alt="${alt}"</li>`
+    `<li><img src="${url}", alt="${alt}"></li>`
   );
 }
 
