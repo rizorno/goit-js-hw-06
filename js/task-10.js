@@ -19,17 +19,13 @@ function createBoxes(amount) {
   let sizeBasic = 30;
   let divAmount = document.querySelectorAll("#boxes>div").length;
 
-  if (divAmount === 0) {
-    amount = input.value;
-  } else {
-    divParent.innerHTML = "";
-    amount = Number(input.value) + divAmount;
-  }
+  amount = input.value;
 
   for (let i = 0; i < amount; i++) {
     const divChild = document.createElement("div");
     divParent.append(divChild);
-    const sizeCurrent = sizeBasic + i * 10;
+
+    const sizeCurrent = sizeBasic + (i + divAmount) * 10;
 
     divParent.lastChild.style.cssText = `width: ${sizeCurrent}px; height: ${sizeCurrent}px; background-color: ${getRandomHexColor()}`;
   }
