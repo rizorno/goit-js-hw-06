@@ -58,16 +58,8 @@ HTML містить список категорій `ul#categories`.
 В результаті, в консолі будуть виведені наступні повідомлення:
 
 ```html
-Number of categories: 3
-
-Category: Animals
-Elements: 4
-
-Category: Products
-Elements: 3
-
-Category: Technologies
-Elements: 5
+Number of categories: 3 Category: Animals Elements: 4 Category: Products
+Elements: 3 Category: Technologies Elements: 5
 ```
 
 ## Завдання 2
@@ -283,3 +275,9 @@ function getRandomHexColor() {
 ```
 
 Створи функцію `destroyBoxes()`, яка очищає вміст `div#boxes`, у такий спосіб видаляючи всі створені елементи.
+
+### Додаткова опція (реалізовувати не обовʼязково)
+
+- Додай кнопку `Remove`, не змінюючи вихідний файл `html`.
+- Кнопку `Remove` розташуй між кнопками `Create` і `Destroy`.
+- Створи функцію `removeBoxes(amount)`, яка приймає один параметр - число. Функція видаляє стільки `<div>` з кінця `div#boxes`, скільки вказано в `amount`.
