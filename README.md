@@ -12,7 +12,7 @@
 
 ## Стартові файли
 
-<a href="https://downgit.github.io/#/home?url=https://github.com/goitacademy/javascript-homework/tree/main/v2/06/src">Завантажуй стартові файли</a> з готовою розміткою та підключеними файлами скриптів для кожного завдання. Скопіюй їх собі у проект.
+[Завантажуй стартові файли](https://downgit.github.io/#/home?url=https://github.com/goitacademy/javascript-homework/tree/main/v2/06/src) з готовою розміткою та підключеними файлами скриптів для кожного завдання. Скопіюй їх собі у проект.
 
 ## Завдання 1
 
